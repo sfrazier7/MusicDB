@@ -40,7 +40,7 @@ public class TrackController {
 		return trkService.putTrack(trk);
 	}
 	
-	@RequestMapping(value="/track/{trkId}/{newName}", method=RequestMethod.PATCH)
+	@RequestMapping(value="/delete/{trkId}/{newName}", method=RequestMethod.PATCH)
 	public Track updateTrackName(@PathVariable(value = "trkId") Long id, @PathVariable(value = "newName") String name) {
 		return trkService.updateTrackName(id, name);
 	}
