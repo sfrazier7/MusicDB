@@ -35,7 +35,7 @@ public class TrackController {
 		return trkService.getTrack(id);
 	}
 	
-	@RequestMapping(value="/track/{trkId}", method=RequestMethod.PUT)
+	@RequestMapping(value="/edit/{trkId}", method=RequestMethod.PUT)
 	public Track putTrack(@PathVariable(value = "trkId") Long id, @RequestBody Track trk) {
 		return trkService.putTrack(trk);
 	}
